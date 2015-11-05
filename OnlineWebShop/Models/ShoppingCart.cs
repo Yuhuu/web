@@ -32,8 +32,10 @@ namespace webshop.Models
           Vare = _db.Vareer.SingleOrDefault(
            p => p.VareId == id),
           Quantity = 1,
-        };
+          UnitSum = _db.Vareer.SingleOrDefault(
+           p => p.VareId == id).Pris ,
 
+        };
         _db.CartItems.Add(cartItem);
   
       }
@@ -42,6 +44,8 @@ namespace webshop.Models
         // If the item does exist in the cart,                  
         // then add one to the quantity.                 
         cartItem.Quantity++;
+        cartItem.UnitSum = (_db.Vareer.SingleOrDefault(
+          p => p.VareId == id).Pris)*(decimal)cartItem.Quantity;
       }
       _db.SaveChanges();
     }
@@ -76,7 +80,6 @@ namespace webshop.Models
     public List<CartItem> GetCartItems()
     {
       ShoppingCartId = GetCartId();
-
       return _db.CartItems.Where(
           c => c.CartId == ShoppingCartId).ToList();
     }

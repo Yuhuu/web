@@ -22,9 +22,11 @@
             </td>
           <td>
            X @Html.DisplayFor(modelItem => item.Quantity)
+            
           </td>
             <td>
-                @Html.ActionLink("Details", "Details", new { id=item.ItemId }) |
+              Total: @Model.Sum(v => Convert.ToDouble(v.UnitSum)) Kr
+                @Html.ActionLink("Details", "Details", new { id=item.ItemId })
                 @Html.ActionLink("Delete", "Delete", new { id=item.ItemId })
             </td>
         </tr>

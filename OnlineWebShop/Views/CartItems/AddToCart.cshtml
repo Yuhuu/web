@@ -33,9 +33,8 @@
       <td>
         @Html.DisplayFor(modelItem => item.Vare.Pris) kr
       </td>
-
+        
       <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.ItemId }) |
         @Html.ActionLink("Details", "Details", new { id = item.ItemId }) |
         @Html.ActionLink("Delete", "Delete", new { id = item.ItemId })
       </td>
@@ -43,7 +42,7 @@
   }
 
   <tr><td>
-  Total: @Model.Sum(v => Convert.ToDouble(v.Vare.Pris)) Kr
+  Total: @Model.Sum(v => Convert.ToDouble(v.UnitSum)) Kr
 </td>
     <td>
       @Html.ActionLink("Return to shop", "../Store/Index",

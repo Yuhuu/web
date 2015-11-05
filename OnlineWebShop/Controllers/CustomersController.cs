@@ -40,18 +40,18 @@ namespace webshop.Controllers
         }
 
         // GET: Customers/Create
-        public ActionResult Create(Kunde best)
-    {
-        var db = new DB();
-      if (ModelState.IsValid)
-      {
-        if (db.SettInnNyKunde(best))
-        {
-          return RedirectToAction("Index");
-        }
-        return View();
-      }
-    }
+    //    public ActionResult Create(Kunde best)
+    //{
+    //    var db = new DB();
+    //  if (ModelState.IsValid)
+    //  {
+    //    if (db.SettInnNyKunde(best))
+    //    {
+    //      return RedirectToAction("Index");
+    //    }
+    //    return View();
+    //  }
+    //}
 
         // POST: Customers/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

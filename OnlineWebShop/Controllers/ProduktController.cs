@@ -10,10 +10,9 @@ namespace webshop.Controllers
 {
   public class ProduktController : Controller
     {
-        
-        public ActionResult Index()
+    private OnlineStoreEntities db = new OnlineStoreEntities();
+    public ActionResult Index()
         {
-            var db = new OnlineStoreEntities();
             List<Vare> alleBestillinger = db.Vareer.ToList();
             return View(alleBestillinger);
         }
@@ -24,13 +23,12 @@ namespace webshop.Controllers
       {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
-      var db = new OnlineStoreEntities();
       Vare vare = db.Vareer.Find(id);
       if (vare == null)
       {
         return HttpNotFound();
       }
-      ViewBag.VareId = new SelectList(db.Vareer, "VareId", "ProduktNavn", vare.VareId);
+      ViewBag.VareProduktMerke = new SelectList(db.Vareer, "ProduktMerke", "ProduktMerke", vare.ProduktMerke);
       return View(vare);
     }
 
@@ -39,7 +37,8 @@ namespace webshop.Controllers
     // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public ActionResult Edit([Bind(Include = "VareId")] Vare vare)
+    public ActionResult Edit
+      ([Bind(Include = "VareId,ProduktNavn,VareProduktMerke,Pris,Antall")] Vare vare)
     {
       var db = new OnlineStoreEntities();
       if (ModelState.IsValid)
@@ -48,7 +47,7 @@ namespace webshop.Controllers
         db.SaveChanges();
         return RedirectToAction("Index");
       }
-      ViewBag.VareId = new SelectList(db.Vareer, "VareId", "ProduktNavn", vare.VareId);
+      ViewBag.VareId = new SelectList(db.Vareer, "ProduktMerke", "ProduktMerke", vare.ProduktMerke);
       return View(vare);
     }
 
