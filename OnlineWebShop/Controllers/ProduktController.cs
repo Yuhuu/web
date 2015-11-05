@@ -47,7 +47,7 @@ namespace webshop.Controllers
         db.SaveChanges();
         return RedirectToAction("Index");
       }
-      ViewBag.VareId = new SelectList(db.Vareer, "ProduktMerke", "ProduktMerke", vare.ProduktMerke);
+      //ViewBag.VareProduktMerke = new SelectList(db.Vareer, "ProduktMerke", "ProduktMerke", vare.ProduktMerke);
       return View(vare);
     }
 
