@@ -149,7 +149,6 @@
     <Compile Include="Models\bruker.cs" />
     <Compile Include="Models\DbContext.cs" />
     <Compile Include="Models\CartItem.cs" />
-    <Compile Include="Models\DBCustomer.cs" />
     <Compile Include="Models\Kunde.cs" />
     <Compile Include="Models\OnlineShopDbInitializer.cs" />
     <Compile Include="Models\Order.cs" />
@@ -186,6 +185,7 @@
     <Content Include="Views\Sikkerhet\Registrer.cshtml" />
     <Content Include="Views\Sikkerhet\LoggAv.cshtml" />
     <Content Include="Views\CartItems\Checkout.cshtml" />
+    <Content Include="Views\CartItems\Kvittering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

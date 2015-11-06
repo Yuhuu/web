@@ -22,6 +22,7 @@ namespace webshop.Models
         [Key]
         public string Navn { get; set; }
         public byte[] Passord { get; set; }
+        
     }
 
     public class BrukerContext : DbContext

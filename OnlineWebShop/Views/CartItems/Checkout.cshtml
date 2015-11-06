@@ -5,34 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<p></p>
 
-<table class="table">
-    <tr class="active">
-        <th>
 
-            Her er kvittering på vare(ne) du har kjøpt:
-        </th>
-    </tr>
-</table>
-<table class="table">
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vare.ProduktNavn)
-            </td>
-            <td>
-                X @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            
-        </tr>
-
-    }
-    <tr>
-        <td>
-            Total: @Model.Sum(v => Convert.ToDouble(v.UnitSum)) Kr
-        </td>
         <td>
             @Html.ActionLink("Return to shop", "../Store/Index",
                 new { @class = "btn" })
