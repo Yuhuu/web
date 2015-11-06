@@ -39,7 +39,8 @@ namespace webshop.Controllers
     // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public ActionResult Edit([Bind(Include = "VareId")] Vare vare)
+    public ActionResult Edit
+       ([Bind(Include = "VareId,ProduktNavn,ProduktMerke,Pris,Antall")] Vare vare)
     {
       var db = new OnlineStoreEntities();
       if (ModelState.IsValid)
@@ -48,7 +49,7 @@ namespace webshop.Controllers
         db.SaveChanges();
         return RedirectToAction("Index");
       }
-      ViewBag.VareId = new SelectList(db.Vareer, "VareId", "ProduktNavn", vare.VareId);
+      //ViewBag.VareId = new SelectList(db.Vareer, "VareId", "ProduktNavn", vare.VareId);
       return View(vare);
     }
 
