@@ -34,10 +34,8 @@
             </p>
         @if (ViewBag.LoggetInn)
         {
-            <p style="color:green">Innlogget som </p>
-            <div class="editor-label">
-                @Html.LabelFor(model => model.Navn)
-            </div>
+            <p style="color:green">Du er innlogget</p>
+            
             <div>
                 @Html.ActionLink("Logg av", "Loggav")<br />
                 @Html.ActionLink("Tilbake til Lista", "Index")<br />
