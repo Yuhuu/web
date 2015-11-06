@@ -75,8 +75,12 @@ namespace webshop.Controllers
 
     public ActionResult Checkout()
     {
-            return View();                
-    }
+
+            var db = new DB();
+            var cart = new ShoppingCart();
+            var cartItem = cart.GetCartItems();
+            return View(cartItem.ToList());
+        }
 
     protected override void Dispose(bool disposing)
         {
