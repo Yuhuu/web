@@ -184,6 +184,7 @@
     <Content Include="Views\Sikkerhet\Index.cshtml" />
     <Content Include="Views\Sikkerhet\InnLoggetSide.cshtml" />
     <Content Include="Views\Sikkerhet\Registrer.cshtml" />
+    <Content Include="Views\Sikkerhet\LoggAv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

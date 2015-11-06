@@ -99,6 +99,34 @@ namespace webshop.Controllers
             }
         }
 
+        public ActionResult LoggAv()
+        {
+            if (Session["InnLogget"] != null)
+            {
+                Session["InnLogget"] = null;
+                ViewBag.Loggetinn = true;
+            }
+            else if (Session["InnLogget"] == null)
+            {
+                ViewBag.Loggetinn = (bool)Session["InnLogget"];
+            }
+            return View();
+        }
+
+        //public ActionResult LoggAv(bruker innBruker)
+        //{
+        //    if (Bruker_i_DB(innBruker))
+        //    {
+        //        Session["InnLogget"] = false;
+        //        ViewBag.Loggetinn = false;
+        //        return View();
+        //    }                           
+        //    else
+        //    {
+        //        return View();                                                                                
+        //    }
+        //}
+
         public ActionResult InnLoggetSide()
         {
             if(Session["InnLogget"] != null)
@@ -106,6 +134,8 @@ namespace webshop.Controllers
                 bool innLogget = (bool)Session["InnLogget"];
                 if (innLogget)
                 {
+                    Session["InnLogget"] = null;
+                    ViewBag.Loggetinn = false;
                     return View();
                 }
             }

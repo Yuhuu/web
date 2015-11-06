@@ -1,6 +1,6 @@
 ﻿@model webshop.Models.bruker
 @{
-
+    
 }
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
@@ -35,6 +35,7 @@
         @if (ViewBag.LoggetInn)
         {
             <p style="color:burlywood">Innlogget</p>
+            
         }
         else
         {
@@ -45,6 +46,7 @@
     }
 
     <div>
+        @Html.ActionLink("Logg av", "Loggav")<br />
         @Html.ActionLink("Tilbake til Lista", "Index")<br/>
         @Html.ActionLink("Registrer deg som bruker", "Registrer")<br />
         @Html.ActionLink("Minside", "InnLoggetSide")<br />
