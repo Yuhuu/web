@@ -112,20 +112,7 @@ namespace webshop.Controllers
             }
             return View();
         }
-
-        //public ActionResult LoggAv(bruker innBruker)
-        //{
-        //    if (Bruker_i_DB(innBruker))
-        //    {
-        //        Session["InnLogget"] = false;
-        //        ViewBag.Loggetinn = false;
-        //        return View();
-        //    }                           
-        //    else
-        //    {
-        //        return View();                                                                                
-        //    }
-        //}
+  
 
         public ActionResult InnLoggetSide()
         {

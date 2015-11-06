@@ -73,7 +73,10 @@ namespace webshop.Controllers
       return View(cartItem);
     }
 
-    
+    public ActionResult Checkout()
+    {
+            return View();                
+    }
 
     protected override void Dispose(bool disposing)
         {
