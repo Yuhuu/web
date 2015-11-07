@@ -56,20 +56,17 @@ namespace webshop.Controllers
             }                 
             using (var db = new BrukerContext())
             {
-                try
-                {
-                    var nyBruker = new dbBruker();
-                    byte[] passordDb = konvertTilHash(innBruker.Passord);
-                    nyBruker.Passord = passordDb;
-                    nyBruker.Navn = innBruker.Navn;
-                    db.Brukere.Add(nyBruker);
-                    db.SaveChanges();
-                    return RedirectToAction("Index");
-                }
-                catch(Exception feil)
-                {
-                    return View();
-                }
+        if (sjekkeNavn(innBruker.Navn))
+        {
+          var nyBruker = new dbBruker();
+          byte[] passordDb = konvertTilHash(innBruker.Passord);
+          nyBruker.Passord = passordDb;
+          nyBruker.Navn = innBruker.Navn;
+          db.Brukere.Add(nyBruker);
+          db.SaveChanges();
+          return RedirectToAction("Index");
+        }
+        else return RedirectToAction("Registrer");
             }       
         }
 
@@ -82,7 +79,21 @@ namespace webshop.Controllers
             return utData;
         }
 
-        private static bool Bruker_i_DB(bruker innBruker)
+    public static bool sjekkeNavn(string innNavn)
+    {
+      using (var db = new BrukerContext())
+      {
+        var check = (from c in db.Brukere
+                     where String.Compare(c.Navn, innNavn, StringComparison.InvariantCultureIgnoreCase) == 0
+                     select new
+                     {
+                       Navn = c.Navn
+                     }).SingleOrDefault();
+        return check == null;
+      }
+    }
+
+    private static bool Bruker_i_DB(bruker innBruker)
         {
             using (var db = new BrukerContext())
             {

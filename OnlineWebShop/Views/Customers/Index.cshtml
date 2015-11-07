@@ -1,25 +1,23 @@
-﻿@model IEnumerable<webshop.Models.Kunde>
+﻿@model IEnumerable<webshop.Models.dbBruker>
 
 @{
-    ViewBag.Title = "show Customers ";
+    ViewBag.Title = "show Customers";
 }
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
+  
     <table class="table">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Navn)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Adresse)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Epost)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.Passord)
+            </th>*@
             <th></th>
         </tr>
     
@@ -28,18 +26,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Navn)
             </td>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Adresse)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Epost)
-            </td>
+            </td>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Passord)
+            </td>*@
             <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.ActionLink("Details", "Details", new { id=item.KId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.KId })
+                @Html.ActionLink("Details", "Details", new { id=item.Navn }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Navn })|
+                @Html.ActionLink("Edit", "Edit", new { id = item.Navn })
             </td>
         </tr>
     }

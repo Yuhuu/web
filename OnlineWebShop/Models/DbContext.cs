@@ -24,7 +24,7 @@ namespace webshop.Models
      // Database.CreateIfNotExists();
     }
 
-    public DbSet<Kunde> Kunder { get; set; }
+    //public DbSet<Kunde> Kunder { get; set; }
     public DbSet<Vare> Vareer { get; set; }
     public DbSet<CartItem> CartItems { get; set; }
 
@@ -35,5 +35,7 @@ namespace webshop.Models
       modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
       // Add any configuration or mapping stuff here
     }
+
+    public System.Data.Entity.DbSet<webshop.Models.dbBruker> dbBrukers { get; set; }
   }
 }

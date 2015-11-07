@@ -59,10 +59,10 @@ namespace webshop.Controllers
         }
 
         [HttpPost]
-        public ActionResult NyVare(Vare best)
+        public ActionResult NyVare(Vare vare)
         {
             var db = new DB();
-            if(db.SettInnNyVare(best))
+            if(db.SettInnNyVare(vare))
             {
                 return RedirectToAction("Index");
             }

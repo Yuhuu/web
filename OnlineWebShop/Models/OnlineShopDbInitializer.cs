@@ -11,16 +11,16 @@ namespace webshop.Models
   {
     protected override void Seed(OnlineStoreEntities context)
     {
-      new List<Kunde>
-      {
-       new Kunde { Navn = "roger", Adresse = "adress norway", Epost = "hello1hotmail.com" },
-       new Kunde { Navn = "Person", Adresse = "Høyskolen0726Oslo",Epost = "hellohotmail.com"},
-       new Kunde { Navn = "lop", Adresse = "Høyskolen0726Oslo", Epost = "hello@hotmail.com"},
-       new Kunde { Navn = "aaaeee", Adresse = "Høyskolen0726 Oslo",Epost = "hellotmail.com" },
-      new Kunde { Navn = "jpe", Adresse = "Høyskolen0433Oslo",Epost = "hellocom" },
-     new Kunde { Navn = "kina", Adresse = "adress korea",Epost = "hello6@hotmail.com" }
-               }.ForEach(a => context.Kunder.Add(a));
-      context.SaveChanges();
+     // new List<Kunde>
+     // {
+     //  new Kunde { Navn = "roger", Adresse = "adress norway", Epost = "hello1hotmail.com" },
+     //  new Kunde { Navn = "Person", Adresse = "Høyskolen0726Oslo",Epost = "hellohotmail.com"},
+     //  new Kunde { Navn = "lop", Adresse = "Høyskolen0726Oslo", Epost = "hello@hotmail.com"},
+     //  new Kunde { Navn = "aaaeee", Adresse = "Høyskolen0726 Oslo",Epost = "hellotmail.com" },
+     // new Kunde { Navn = "jpe", Adresse = "Høyskolen0433Oslo",Epost = "hellocom" },
+     //new Kunde { Navn = "kina", Adresse = "adress korea",Epost = "hello6@hotmail.com" }
+     //          }.ForEach(a => context.Kunder.Add(a));
+     // context.SaveChanges();
      new List<Vare>
      {
        new Vare { ProduktNavn = "Model-2014-navesti", ProduktMerke = "navesti", Pris = 223M, Antall = 2 },
@@ -38,8 +38,6 @@ namespace webshop.Models
      }.ForEach(a => context.Vareer.Add(a));
      //// Kunde = context.Kunder.Single(g => g.KId == 5)
      context.SaveChanges();
-
-    
       base.Seed(context);
     }
   }

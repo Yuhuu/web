@@ -122,3 +122,96 @@ C:\Users\Nguyen\Desktop\test\web\OnlineWebShop\bin\System.Web.Mvc.xml
 C:\Users\Nguyen\Desktop\test\web\OnlineWebShop\obj\Debug\webshop.csprojResolveAssemblyReference.cache
 C:\Users\Nguyen\Desktop\test\web\OnlineWebShop\obj\Debug\webshop.dll
 C:\Users\Nguyen\Desktop\test\web\OnlineWebShop\obj\Debug\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\webshop.dll.config
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\webshop.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\Antlr3.Runtime.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\dotless.Core.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\EntityFramework.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\EntityFramework.SqlServer.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\Newtonsoft.Json.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Helpers.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Mvc.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Optimization.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Razor.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.Razor.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\WebGrease.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\Antlr3.Runtime.pdb
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\EntityFramework.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\EntityFramework.SqlServer.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\Newtonsoft.Json.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Optimization.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Razor.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Webpages.Razor.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Helpers.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\bin\System.Web.Mvc.xml
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\obj\Debug\webshop.csprojResolveAssemblyReference.cache
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\obj\Debug\webshop.dll
+C:\Users\vicky\Documents\GitHub\web\OnlineWebShop\obj\Debug\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\webshop.dll.config
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\webshop.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\Antlr3.Runtime.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\dotless.Core.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\EntityFramework.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\EntityFramework.SqlServer.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\Newtonsoft.Json.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Helpers.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Mvc.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Optimization.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Razor.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.Razor.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\WebGrease.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\Antlr3.Runtime.pdb
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\EntityFramework.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\EntityFramework.SqlServer.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\Newtonsoft.Json.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Optimization.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Razor.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Webpages.Razor.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Helpers.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\bin\System.Web.Mvc.xml
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\obj\Debug\webshop.csprojResolveAssemblyReference.cache
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\obj\Debug\webshop.dll
+C:\Users\vicky\Documents\GitHub\web - Copy\OnlineWebShop\obj\Debug\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\webshop.dll.config
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\webshop.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\webshop.pdb
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\Antlr3.Runtime.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\dotless.Core.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\EntityFramework.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\EntityFramework.SqlServer.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\Newtonsoft.Json.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Helpers.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Mvc.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Optimization.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Razor.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.Deployment.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.Razor.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\WebGrease.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\Antlr3.Runtime.pdb
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\EntityFramework.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\EntityFramework.SqlServer.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\Newtonsoft.Json.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Optimization.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Razor.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.Deployment.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Webpages.Razor.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Helpers.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\bin\System.Web.Mvc.xml
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\obj\Debug\webshop.csprojResolveAssemblyReference.cache
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\obj\Debug\webshop.dll
+C:\Users\vicky\Documents\GitHub\web-Copy\OnlineWebShop\obj\Debug\webshop.pdb

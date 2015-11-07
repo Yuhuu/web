@@ -9,7 +9,7 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
-    <WebStackScaffolding_DbContextTypeFullName>webshop.Models.BrukerContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_DbContextTypeFullName>webshop.Models.OnlineStoreEntities</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>

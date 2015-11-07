@@ -1,4 +1,4 @@
-﻿@model webshop.Models.Kunde
+﻿@model webshop.Models.dbBruker
 
     <div>
         <h4>Kunde</h4>
@@ -12,7 +12,7 @@
                 @Html.DisplayFor(model => model.Navn)
             </dd>
     
-            <dt>
+            @*<dt>
                 @Html.DisplayNameFor(model => model.Adresse)
             </dt>
     
@@ -26,14 +26,16 @@
     
             <dd>
                 @Html.DisplayFor(model => model.Epost)
-            </dd>
+            </dd>*@
     
             <dt>
-                @Html.DisplayNameFor(model => model.Password)
+              Detail
+                @*@Html.DisplayNameFor(model => model.Passord)*@
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Password)
+
+                @*@Html.DisplayFor(model => model.Passord)*@
             </dd>
     
         </dl>

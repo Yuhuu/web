@@ -13,25 +13,25 @@ namespace webshop.Controllers
 {
     public class CustomersController : Controller
     {
-        private OnlineStoreEntities db = new OnlineStoreEntities();
+        private BrukerContext db = new BrukerContext();
 
         // GET: Customers
         public ActionResult Index()
         {
-            return View(db.Kunder.ToList());
+            return View(db.Brukere.ToList());
         }
         public ActionResult SignIn()
         {
           return View();
         }
     // GET: Customers/Details/5
-    public ActionResult Details(int? id = 0)
+    public ActionResult Details(String id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kunde kunde = db.Kunder.Find(id);
+            dbBruker kunde = db.Brukere.Find(id);
             if (kunde == null)
             {
                 return HttpNotFound();
@@ -39,44 +39,13 @@ namespace webshop.Controllers
             return View(kunde);
         }
 
-        // GET: Customers/Create
-    //    public ActionResult Create(Kunde best)
-    //{
-    //    var db = new DB();
-    //  if (ModelState.IsValid)
-    //  {
-    //    if (db.SettInnNyKunde(best))
-    //    {
-    //      return RedirectToAction("Index");
-    //    }
-    //    return View();
-    //  }
-    //}
-
-        // POST: Customers/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include = "KId,Navn,Adresse,Epost,Password")] Kunde kunde)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Kunder.Add(kunde);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(kunde);
-        //}
-
-        // GET: Customers/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(String id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kunde kunde = db.Kunder.Find(id);
+            dbBruker kunde = db.Brukere.Find(id);
             if (kunde == null)
             {
                 return HttpNotFound();
@@ -84,12 +53,12 @@ namespace webshop.Controllers
             return View(kunde);
         }
 
-        // POST: Customers/Edit/5
+        // POST: Customers/Edit/Navn
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "KId,Navn,Adresse,Epost,Password")] Kunde kunde)
+        public ActionResult Edit([Bind(Include = "Navn,Passord")] dbBruker kunde)
         {
             if (ModelState.IsValid)
             {
@@ -101,13 +70,13 @@ namespace webshop.Controllers
         }
 
         // GET: Customers/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(String id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kunde kunde = db.Kunder.Find(id);
+            dbBruker kunde = db.Brukere.Find(id);
             if (kunde == null)
             {
                 return HttpNotFound();
@@ -118,10 +87,10 @@ namespace webshop.Controllers
         // POST: Customers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(String id)
         {
-            Kunde kunde = db.Kunder.Find(id);
-            db.Kunder.Remove(kunde);
+            dbBruker kunde = db.Brukere.Find(id);
+            db.Brukere.Remove(kunde);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

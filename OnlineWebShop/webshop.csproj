@@ -149,13 +149,12 @@
     <Compile Include="Models\bruker.cs" />
     <Compile Include="Models\DbContext.cs" />
     <Compile Include="Models\CartItem.cs" />
-    <Compile Include="Models\DBCustomer.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Models\Kunde.cs" />
+>>>>>>> origin/master
     <Compile Include="Models\OnlineShopDbInitializer.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
-    <Compile Include="Models\SignInCredentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,7 +170,6 @@
     <Content Include="Views\Home\Indeks.cshtml" />
     <Content Include="Views\Home\Informasjon.cshtml" />
     <Content Include="Views\Home\Kontakt.cshtml" />
-    <Content Include="Views\Home\Minside.cshtml" />
     <Content Include="ClassDiagram1.cd" />
     <Content Include="Views\CartItems\Delete.cshtml" />
     <Content Include="Views\CartItems\Details.cshtml" />
@@ -186,6 +184,11 @@
     <Content Include="Views\Sikkerhet\Registrer.cshtml" />
     <Content Include="Views\Sikkerhet\LoggAv.cshtml" />
     <Content Include="Views\CartItems\Checkout.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Customers\Edit.cshtml" />
+=======
+>>>>>>> origin/master
+    <Content Include="Views\CartItems\Kvittering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -11,17 +11,23 @@ namespace webshop.Models
 {
     public class bruker
     {
-        [Required(ErrorMessage="Trenger et navn")]
-        public string Navn { get; set; }
-        [Required(ErrorMessage="Trenger et passord")]
-        public string Passord { get; set; }
-    }
+    [Required(ErrorMessage="Trenger et navn")]
+    public string Navn { get; set; }
+    //[Required(ErrorMessage = "Trenger et Epost")]
+    //public string Epost { get; set; }
+    //[Required(ErrorMessage = "Trenger et Address")]
+    //public string Address { get; set; }
+    [Required(ErrorMessage = "Trenger et passord")]
+    public string Passord { get; set; }
+
+  }
 
     public class dbBruker
     {
         [Key]
         public string Navn { get; set; }
         public byte[] Passord { get; set; }
+        
     }
 
     public class BrukerContext : DbContext
