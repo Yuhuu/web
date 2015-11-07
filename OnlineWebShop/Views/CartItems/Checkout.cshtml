@@ -1,18 +1,13 @@
-﻿@model IEnumerable<webshop.Models.CartItem>
+@model IEnumerable<webshop.Models.CartItem>
 
 @{
-<<<<<<< HEAD
   ViewBag.Title = "show customer cart information";
   Layout = "~/Views/Shared/_Layout.cshtml";
-=======
-    ViewBag.Title = "show customer cart information";
-    Layout = "~/Views/Shared/_Layout.cshtml";
->>>>>>> origin/master
+
 }
 
 
 <table class="table">
-<<<<<<< HEAD
   <tr class="active">
     <th>
 
@@ -44,45 +39,6 @@
     <td>
       @Html.ActionLink("Return to shop", "../Store/Index",
                 new { @class = "btn" })
-
     </td>
-
   </tr>
-=======
-    <tr class="active">
-        <th>
-
-            Her er kvittering på vare(ne) du har kjøpt:
-        </th>
-    </tr>
-</table>
-<table class="table">
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vare.ProduktNavn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Vare.Pris)
-            </td>
-        </tr>
-
-    }
-    <tr>
-        <td>
-            Total: @Model.Sum(v => Convert.ToDouble(v.UnitSum)) Kr
-        </td>
-        <td>
-            @Html.ActionLink("Return to shop", "../Store/Index",
-                new { @class = "btn" })
-
-        </td>
-
-    </tr>
->>>>>>> origin/master
 </table>
