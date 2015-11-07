@@ -75,7 +75,7 @@ namespace webshop.Controllers
 
     public ActionResult Checkout()
     {
-<<<<<<< HEAD
+
       var db = new DB();
       var cart = new ShoppingCart();
       var cartItem = cart.GetCartItems();
@@ -113,26 +113,6 @@ namespace webshop.Controllers
         ViewBag.Loggetinn = false;
         return RedirectToAction("../Sikkerhet/Index");
       }
-=======
-            
-            var db = new DB();
-            var cart = new ShoppingCart();
-            var cartItem = cart.GetCartItems();
-
-            if (Session["InnLogget"] != null)
-            {
-                Session["InnLogget"] = true;
-                ViewBag.Loggetinn = true;
-                return View(cartItem.ToList());
-            }
-            else
-            {
-                Session["InnLogget"] = false;
-                ViewBag.Loggetinn = false;
-                return RedirectToAction("../Sikkerhet/Index");
-            }
-
->>>>>>> origin/master
     }
   
 
