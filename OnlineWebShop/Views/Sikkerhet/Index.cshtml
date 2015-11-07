@@ -15,6 +15,19 @@
         <fieldset>
             <legend>Logg inn</legend>
 
+            
+        @if (ViewBag.LoggetInn)
+        {
+            <p style="color:green">Du er innlogget</p>
+            
+            <div>
+                @Html.ActionLink("Logg av", "Loggav")<br />
+                @Html.ActionLink("Tilbake til Lista", "Index")<br />
+                @Html.ActionLink("Minside", "InnLoggetSide")<br />
+            </div>
+        }
+        else
+        {
             <div class="editor-label">
                 @Html.LabelFor(model => model.Navn)
             </div>
@@ -32,22 +45,16 @@
             <p>
                 <input type="submit" value="Logg inn" />
             </p>
-        @if (ViewBag.LoggetInn)
-        {
-            <p style="color:burlywood">Innlogget</p>
-            
-        }
-        else
-        {
-            <p style="color:chartreuse">Ikke innlogget</p>
+            <p style="color:red">Ikke innlogget</p>
+            <div>  
+                @Html.ActionLink("Tilbake til Lista", "Index")<br />
+                @Html.ActionLink("Registrer deg som bruker", "Registrer")<br />              
+            </div>
         }
         </fieldset>
 
     }
 
     <div>
-        @Html.ActionLink("Logg av", "Loggav")<br />
-        @Html.ActionLink("Tilbake til Lista", "Index")<br/>
-        @Html.ActionLink("Registrer deg som bruker", "Registrer")<br />
-        @Html.ActionLink("Minside", "InnLoggetSide")<br />
+       
     </div>

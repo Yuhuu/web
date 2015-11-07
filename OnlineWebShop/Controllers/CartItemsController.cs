@@ -75,8 +75,45 @@ namespace webshop.Controllers
 
     public ActionResult Checkout()
     {
-            return View();                
+            
+            var db = new DB();
+            var cart = new ShoppingCart();
+            var cartItem = cart.GetCartItems();
+
+            if (Session["InnLogget"] != null)
+            {
+                Session["InnLogget"] = true;
+                ViewBag.Loggetinn = true;
+                return View(cartItem.ToList());
+            }
+            else
+            {
+                Session["InnLogget"] = false;
+                ViewBag.Loggetinn = false;
+                return RedirectToAction("../Sikkerhet/Index");
+            }
+
     }
+
+    public ActionResult Kvittering()
+    {
+            var db = new DB();
+            var cart = new ShoppingCart();
+            var cartItem = cart.GetCartItems();
+
+            if (Session["InnLogget"] != null)
+            {
+                Session["InnLogget"] = true;
+                ViewBag.Loggetinn = true;
+                return View(cartItem.ToList());
+            }
+            else
+            {
+                Session["InnLogget"] = false;
+                ViewBag.Loggetinn = false;
+                return RedirectToAction("../Sikkerhet/Index");
+            }
+        }
 
     protected override void Dispose(bool disposing)
         {
