@@ -1,4 +1,4 @@
-# web
+# Microsoft WS MVC app with Angular
 Public web store for HIFI music equipment
 <h1>This project is about identity management for an MVC application</h1>
 <p>Windows authentication and Role-Based Authorization will be practised. </p>
